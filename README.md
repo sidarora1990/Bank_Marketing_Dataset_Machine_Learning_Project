@@ -13,4 +13,4 @@ In this project we build two classifiers for this data set: a decision tree, and
  ## Pipeline
  <p>Pipelines are useful in designing a flow of events to be executed. The main purpose of this project is to show the use of Sklearn's pipeline to execute stratified K fold cross validation,feature engineering and fit a machine learning model in this specific order. Stratified K fold cross validation is used to tackle over-fitting. We calculate the mean train score and test score for each classifier.</p>  
  <p> We also use SMOTE and undersampling as two further steps in the pipline to tackle the class imabalnce of the data. </p>
-
+<p> After fitting the pipeline for random forest, we collect the important features for each of the 10 estimators (since 10-fold stratified cross validation) and store them in a dataframe in decreasing order of importance. Based on the most imoportant features, we can again fit the model again and recompute the train and test accuracy.</p>
