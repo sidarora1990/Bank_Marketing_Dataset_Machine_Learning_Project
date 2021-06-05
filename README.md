@@ -5,4 +5,5 @@ The "Bank Marketing Data Set" from the UCI Machine Learning Repository is relate
 The classification goal is to predict if the client will subscribe a term deposit (variable y). You can find a description of the attributes at the original UCI URL, https://archive.ics.uci.edu/ml/datasets/Bank+Marketing.
 In this project we build two classifiers for this data set: a decision tree, and a random forest. We use ROC AUC score as an evaluation metric to compare the performance of the two classifiers.
 ## Approach
-<ul><li> We devise two feature engineering appraoches: First, label encoding of Education and One-hot encoding of categorical fields and second, ordinal encoding of Education and One-hot encoding of categorical fields</li></ui></li></ui>
+<ul><li> We devise two feature engineering appraoches: First, Label encoding of Education and One-hot encoding of categorical fields and second, ordinal encoding of Education and One-hot encoding of categorical fields</li>
+  <li>Create pipeline of Feaure Engineering and the ML model i.e. Decision Tree or Random Forest.<\li></ui>
