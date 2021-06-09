@@ -15,6 +15,7 @@ In this project we build two classifiers for this data set: a decision tree, and
  <p> We also use SMOTE and undersampling as two further steps in the pipline to tackle the class imabalnce of the data. We randomly undersample 50% of the data pertaining to majority class and oversample 20% of the data pertaining to minority class. In this way, we decrease the class imbalance to a larger extent if not zero. The usage of both oversampling of minority class and undersampling of majority class ensures better result than either of the methods used.</p>
 <p> After fitting the pipeline for random forest, we collect the important features for each of the 10 estimators (since 10-fold stratified cross validation) and store them in a dataframe in decreasing order of importance. Based on the most important features, we can fit the model again and recompute the train and test accuracy.</p>
  <p>One of the concepts used in this project is cnaging the threshold from 0.5 to the one which maximizes the training and testing accuracy.</p>
+
 ## Results
 We list only those results where training accuracy and testing accuracy are nearly equal and high enough. 
 <table>
