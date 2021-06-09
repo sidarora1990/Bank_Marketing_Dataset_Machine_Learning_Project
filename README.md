@@ -16,6 +16,7 @@ In this project we build two classifiers for this data set: a decision tree, and
 <p> After fitting the pipeline for random forest, we collect the important features for each of the 10 estimators (since 10-fold stratified cross validation) and store them in a dataframe in decreasing order of importance. Based on the most important features, we can fit the model again and recompute the train and test accuracy.</p>
 
 ## Results
+We list only those results where training accuracy and testing accuracy are nearly equal and high enough. 
 <table>
   <tr>
     <th rowspan="2"> Classifier</th>
