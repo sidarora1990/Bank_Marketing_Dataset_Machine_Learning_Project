@@ -16,4 +16,35 @@ In this project we build two classifiers for this data set: a decision tree, and
 <p> After fitting the pipeline for random forest, we collect the important features for each of the 10 estimators (since 10-fold stratified cross validation) and store them in a dataframe in decreasing order of importance. Based on the most important features, we can fit the model again and recompute the train and test accuracy.</p>
 
 ## Results
-<p>We observe that Random forest with 50 estimators outperforms Decision trees and Random Forest with SMOTE and Random Undersampling combination.</p>
+<table>
+  <tr>
+    <th rowspan="2"> Classifier</th>
+    <th colspan="2">Decision Tree</th>
+    <th colspan="2">Random Forest without threshold </th>
+    <th colspan="2">Random Forest with threshold </th>
+    <th colspan="2">Naive Bayes </th>
+
+  </tr>
+  <tr>
+    <th>Train ROC AUC score </th>
+    <th> Test ROC AUC score </th>
+    <th>Train ROC AUC score </th>
+    <th> Test ROC AUC score </th>
+    <th>Train ROC AUC score </th>
+     <th> Test ROC AUC score </th>
+     <th>Train ROC AUC score </th>
+     <th> Test ROC AUC score </th>
+      
+  </tr>
+  <tr>
+    <td> </td>
+    <td>0.626</td>
+    <td>0.620</td>
+      <td>0.586</td>
+    <td>0.585</td>
+      <td>0.744</td>
+    <td>0.744</td>
+      <td>0.688</td>
+    <td>0.687</td>
+  </tr>
+</table>
